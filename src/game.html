@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Gambling-161 - game"
+})
+
+<body>
+	<div class="wrapper">
+		<div class="wrapper__game game">
+			<div class="game__body">
+				<div class="game__header header">
+					<div class="header__body">
+						<div class="header__score-box score-box">
+							<div class="score-box__body">
+								<div class="score-box__icon icon-coin"></div>
+								<div class="score-box__score score">0</div>
+							</div>
+						</div>
+						<button type="button" data-btn="game-home" class="header__button-menu"><span>Menu</span></button>
+					</div>
+				</div>
+				<div class="game__block block-game">
+					<div class="block-game__field">
+					</div>
+				</div>
+				<div class="game__footer footer-game">
+					<div class="footer-game__body">
+						<div class="footer-game__moves">30 moves</div>
+						<div class="footer-game__scores">
+							<div data-score="1" class="footer-game__score-box">
+								<div class="footer-game__score-image">
+									<img src="@img/game/icon-2.png" alt="">
+								</div>
+								<div class="footer-game__score">0/50</div>
+							</div>
+							<div data-score="2" class="footer-game__score-box">
+								<div class="footer-game__score-image">
+									<img src="@img/game/icon-5.png" alt="">
+								</div>
+								<div class="footer-game__score">0/50</div>
+							</div>
+							<div data-score="3" class="footer-game__score-box">
+								<div class="footer-game__score-image">
+									<img src="@img/game/icon-6.png" alt="">
+								</div>
+								<div class="footer-game__score">0/50</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="wrapper__final final">
+			<div class="final__body">
+				<div class="final__title">Game over</div>
+				<div class="final__score-box score-box">
+					<div class="score-box__body button-bg">
+						<div class="score-box__icon icon-coin"><span></span> </div>
+						<div class="score-box__score final-check">0</div>
+					</div>
+				</div>
+				<div class="final__button-box">
+					<button type="button" data-btn="game" class="final__button"><span>Repeat</span></button>
+					<button type="button" data-btn="game-home" class="final__button"><span>Menu</span></button>
+				</div>
+			</div>
+		</div>
+	</div>
+	@@include('html/_js.htm',{})
+</body>
+
+</html>

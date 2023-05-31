@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/_head.htm',{
+"title":"Gambling-164"
+})
+
+<body>
+	<div class="wrapper">
+		<div class="wrapper__main main">
+			<div class="main__body">
+				<div class="main__header header-main">
+					<div class="header-main__body">
+						<div class="header-main__score-box score-box">
+							<div class="score-box__body">
+								<div class="score-box__icon icon-game"></div>
+								<div class="score-box__score score">0</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="main__cards">
+					<div class="main__card card-main">
+						<div class="card-main__body">
+							<div class="card-main__image">
+								<img src="@img/other/card-1.png" alt="Image">
+							</div>
+							<div class="card-main__button-box">
+								<button type="button" data-btn="slot"
+									class="card-main__button button-red"><span>Play</span></button>
+							</div>
+						</div>
+					</div>
+					<div class="main__card card-main _disabled">
+						<div class="card-main__body">
+							<div class="card-main__image">
+								<img src="@img/other/card-2.png" alt="Image">
+							</div>
+							<div class="card-main__button-box">
+								<button type="button" class="card-main__button button-red"><span>Play</span></button>
+							</div>
+						</div>
+					</div>
+					<div class="main__card card-main _disabled">
+						<div class="card-main__body">
+							<div class="card-main__image">
+								<img src="@img/other/card-3.png" alt="Image">
+							</div>
+							<div class="card-main__button-box">
+								<button type="button" class="card-main__button button-red"><span>Play</span></button>
+							</div>
+						</div>
+					</div>
+					<div class="main__card card-main _disabled">
+						<div class="card-main__body">
+							<div class="card-main__image">
+								<img src="@img/other/card-4.png" alt="Image">
+							</div>
+							<div class="card-main__button-box">
+								<button type="button" class="card-main__button button-red"><span>Play</span></button>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="main__drum-card">
+					<div class="main__drum-image">
+						<img src="@img/other/drum.png" alt="Image">
+					</div>
+					<div class="main__drum-button-box">
+						<button type="button" data-btn="drum" class="main__drum-button button-red"><span>Play</span></button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="wrapper__slot slot">
+			<div class="slot__body">
+				<div class="slot__header header">
+					<div class="header__body">
+						<button type="button" data-btn="slot-home" class="header__button-home"></button>
+						<div class="header__score-box score-box">
+							<div class="score-box__body">
+								<div class="score-box__icon icon-game"></div>
+								<div class="score-box__score score">0</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="slot__title"></div>
+				<div class="slot__game">
+					<div class="slot__box">
+						<div class="slot__cont">
+							<div id="slot1" class="slot1">
+								<div id="reels1" class="reels1">
+									<div class="slot__frame">
+										<img src="@img/slot/frame.png" alt="Image">
+									</div>
+									<div class="reel1"></div>
+									<div class="reel1"></div>
+									<div class="reel1"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="slot__controls controls-slot">
+					<div class="controls-slot__body">
+						<button type="button" data-btn="slot-auto" class="controls-slot__button-auto"></button>
+						<button type="button" data-btn="slot-start" class="controls-slot__button-spin"></button>
+						<button type="button" data-btn="slot-max" class="controls-slot__button-max"></button>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="wrapper__drum drum">
+			<div class="drum__body">
+				<div class="slot__header header">
+					<div class="header__body">
+						<button type="button" data-btn="drum-home" class="header__button-home"></button>
+						<div class="header__score-box score-box">
+							<div class="score-box__body">
+								<div class="score-box__icon icon-game"></div>
+								<div class="score-box__score score">0</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="drum__circle circle">
+					<div class="circle__body">
+						<div class="circle__arrow">
+							<div class="circle__dot"></div>
+						</div>
+						<div class="circle__drum-box">
+							<div class="circle__drum">
+								<img src="@img/other/drum.png" alt="Image">
+								<div class="circle__values">
+									<div data-target="200" class="circle__value circle__value_1 text text_2"><span>200</span>
+									</div>
+									<div data-target="500" class="circle__value circle__value_2 text text_1"><span>500</span>
+									</div>
+									<div data-target="150" class="circle__value circle__value_3 text text_2"><span>150</span>
+									</div>
+									<div data-target="800" class="circle__value circle__value_4 text text_1"><span>800</span>
+									</div>
+									<div data-target="600" class="circle__value circle__value_5 text text_2"><span>600</span>
+									</div>
+									<div data-target="900" class="circle__value circle__value_6 text text_1"><span>900</span>
+									</div>
+									<div data-target="350" class="circle__value circle__value_7 text text_2"><span>350</span>
+									</div>
+									<div data-target="800" class="circle__value circle__value_8 text text_1"><span>800</span>
+									</div>
+									<div data-target="150" class="circle__value circle__value_9 text text_2"><span>150</span>
+									</div>
+									<div data-target="500" class="circle__value circle__value_10 text text_1"><span>500</span>
+									</div>
+									<div data-target="200" class="circle__value circle__value_11 text text_2"><span>200</span>
+									</div>
+									<div data-target="750" class="circle__value circle__value_12 text text_1"><span>750</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="circle__button-box">
+							<button type="button" class="circle__button">SPIN</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="game__final final">
+			<div class="final__body">
+				<div class="final__title">win</div>
+				<div class="final__score-box score-box">
+					<div class="score-box__body">
+						<div class="score-box__icon icon-game"><span></span> </div>
+						<div class="score-box__score final-check">0</div>
+					</div>
+				</div>
+				<div class="final__button-box">
+					<button type="button" class="final__button"><span>ok</span></button>
+				</div>
+			</div>
+		</div>
+	</div>
+	@@include('html/_js.htm',{})
+</body>
+
+</html>
